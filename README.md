@@ -70,9 +70,9 @@ This section shows you how to unpack the TI SimpleLink CC3235SF LaunchPad develo
 
 - Instructions : [Unpack the TI SimpleLink CC3235SF LaunchPad and BoosterPacks](part1/UNBOX.md)
 
-### Section 2 -  connect to the STM32MP1
+### Section 2 -  connect to the LaunchPad
 
-This section shows you how to power up OpenSTLinux on the STM32MP1, detect the WiFi IP address and connect to the device via ssh
+This section shows you how to program the TI SimpleLink CC3235SF LaunchPad, connect to the WiFi and create the Watson IoT Cloud project
 
 - Instructions : Install [Code Composer Studio IDE](part1/CCSIDE.md)
 
@@ -86,7 +86,7 @@ This section shows you how to run the Environmental Sensor programs to observe t
 
 This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/)
 
-- Instructions : [Send Sensor Data to Quickstart](part1/EDGE-QUICKSTART.md)
+- Instructions : [Send Sensor Data to Quickstart](part1/QUICKSTART.md)
 
 ## Part 2
 
@@ -102,25 +102,29 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 - Instructions : [Node-RED Set up and Configuration in IBM Cloud](part2/NODERED.md)
 
-### Section 9 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
+### Section 9 - Configure MQTT Node to Receive Sensor data
+
+- Instructions : [Configure the Node-RED MQTT input node to receive sensor data](part2/MQTTCONFIG.md)
+
+### Section 10 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
 
 - Instructions : [Send Sensor Data from the LaunchPad to IBM Cloud](part2/SENDCC3235.md)
 
-### Section 10 - Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED
+### Section 11 - Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED
 
 - Instructions : [Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED](part2/SIMPLELINKIOTDATA.md)
 
 ## Part 3
 
-### Section 11 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
+### Section 12 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
 
 - Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part2/DASHBOARD.md)
 
-### Section 12 - Store Data in Cloud Storage for Historical Data Analytics
+### Section 13 - Store Data in Cloud Storage for Historical Data Analytics
 
 - Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part2/CLOUDANT.md)
 
-### Section 13 - Node-RED Charts of Historical Sensor Data
+### Section 14 - Node-RED Charts of Historical Sensor Data
 
 - Instructions : [Node-RED Charts of Historical Sensor Data](part2/HISTORY.md)
 
