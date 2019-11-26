@@ -6,8 +6,8 @@ Texas Instruments SimpleLink and IBM Watson IoT Hands-On Workshop
 Learn how to connect your next IoT Edge design to the Cloud using IBM Watson IoT Platform and the TI SimpleLink CC3235SF LaunchPad.  The CC3235SF features a ARM Cortex® -M4 MCU and wireless connectivity. In this workshop we will attach an BoosterPack sensor expansion board to showcase cloud connectivity features.  We will create a program in the TI Code Composer Studio.  The program will send sensor data to the IBM Watson IoT Platform, where Node-RED running in a Node web application in IBM Cloud will display a Dashboard.  The data will be saved to a Cloudant time series database.
 
 **Presenters:**
-- [**Roger Monk**](https://github.com/rdmonk), TI System Applications Engineer
-- [**John Walicki**](https://github.com/johnwalicki), IBM Developer Advocate, CTO IoT / Edge Advocacy
+- [**Roger Monk**](https://github.com/rdmonk) - TI System Applications Engineer
+- [**John Walicki**](https://github.com/johnwalicki) - IBM Developer Advocate, CTO IoT / Edge Advocacy
 
 This hands-on workshop will show you how to integrate sensors, wireless connectivity, a low-power microcontroller and sensor libraries into your next IoT Edge design. You’ll then learn to connect the TI SimpleLink LaunchPad to IBM Cloud and Watson IoT Platform to create a new application in minutes using Node-RED.
 
@@ -33,12 +33,11 @@ In this workshop, you will learn how to:
 - Launch the Watson IoT Starter application
 - Open the Watson IoT Platform so that you can send/receive data from the SimpleLink device
 - Create a SimpleLink device type and device
+- Using Code Composer Studio, Compile and Flash a MCU program that sends MQTT data to Watson IoT Platform
 - Configure the Node-RED visual programming editor
 - Secure your Node-RED Editor in IBM Cloud
 - Install additional Node-RED nodes
-- Import a prebuilt flow from GitHub
 - Create a new Node-RED flow and configure IoT MQTT
-- Using Code Composer Studio, Compile and Flash a MCU program that sends MQTT data to Watson IoT
 - Output the TI SimpleLink CC3235SF LaunchPad temperature and humidity data
 - Work with JSON data and observe the sensor results in the Debug sidebar
 
@@ -47,8 +46,8 @@ In this workshop, you will learn how to:
 - Create a Node-RED Dashboard
 - Experiment with Chart types
 - Plot Real Time sensor data
-- Add the mmWave BoosterPack to your LaunchPad and compile a MCU binary
-- Send Time of Flight distance sensor data to Watson IoT
+- Attach the mmWave BoosterPack to your LaunchPad and compile a MCU binary
+- Send Time of Flight (ToF) distance sensor data to Watson IoT
 - Plot ToF distance sensor data
 - Create a Node-RED flow that uses the Cloudant node
 - Format a time series database record
@@ -98,17 +97,17 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 - Instructions : [Create a Watson IoT Platform Device Type and Device](part2/SIMPLELINKDEVICE.md)
 
-### Section 8 - Node-RED Set up and Configuration in IBM Cloud
+### Section 8 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
+
+- Instructions : [Send Sensor Data from the LaunchPad to IBM Cloud](part2/SENDCC3235.md)
+
+### Section 9 - Node-RED Set up and Configuration in IBM Cloud
 
 - Instructions : [Node-RED Set up and Configuration in IBM Cloud](part2/NODERED.md)
 
-### Section 9 - Configure MQTT Node to Receive Sensor data
+### Section 10 - Configure MQTT Node to Receive Sensor data
 
 - Instructions : [Configure the Node-RED MQTT input node to receive sensor data](part2/MQTTCONFIG.md)
-
-### Section 10 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
-
-- Instructions : [Send Sensor Data from the LaunchPad to IBM Cloud](part2/SENDCC3235.md)
 
 ### Section 11 - Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED
 
@@ -118,15 +117,23 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 ### Section 12 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
 
-- Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part2/DASHBOARD.md)
+- Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part3/DASHBOARD.md)
 
-### Section 13 - Store Data in Cloud Storage for Historical Data Analytics
+### Section 13 - mmWave BoosterPack - Time of Flight Sensor Data
 
-- Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part2/CLOUDANT.md)
+- Instructions : [Add the mmWave BoosterPack to your LaunchPad and compile a MCU binary](part3/MMWAVETOF.md)
+
+### Section 14 - Node-RED Dashboard - Plot ToF Distance Sensor Data
+
+- Instructions : [Plot Time of Flight Sensor Data on a Node-RED Dashboard](TOFDASH.md)
+
+### Section 15 - Store Data in Cloud Storage for Historical Data Analytics
+
+- Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part3/CLOUDANT.md)
 
 ### Section 14 - Node-RED Charts of Historical Sensor Data
 
-- Instructions : [Node-RED Charts of Historical Sensor Data](part2/HISTORY.md)
+- Instructions : [Node-RED Charts of Historical Sensor Data](part3/HISTORY.md)
 
 ## Workshop summary
 
