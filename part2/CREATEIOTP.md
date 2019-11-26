@@ -1,12 +1,12 @@
 *Quick links :*
-333
+[Home](/README.md) - [**IoT Platform Starter**](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
 ***
 
 ## Lab Objectives
 
 In this lab you will create a Node-RED Starter and Internet of Things service instance in IBM Cloud
 
-- Name your IBM Cloud application *ti-simplelink-<yourinitials>*
+- Name your IBM Cloud application *ti-simplelink-\<yourinitials\>*
 
 # Create an Internet of Things Platform Starter application
 
@@ -19,5 +19,6 @@ Then, return here so you can proceed to the next step.
 Continue to the next step - [Device Types and Devices](SIMPLELINKDEVICE.md)
 
 ***
-*Quick links :*[Home](/README.md) - [**IoT Platform Starter**](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
+*Quick links :*
+[Home](/README.md) - [**IoT Platform Starter**](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
 ***

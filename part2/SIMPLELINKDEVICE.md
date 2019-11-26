@@ -15,7 +15,7 @@ This Lab will show you how to register your TI SimpleLink CC3235SF LaunchPad wit
 
 Before you can connect a device to the Watson IoT Platform you need to define how the device will connect to the platform and also register the device to generate an access token for the device.  This will be used to verify the device identity.
 
-You need to decide how you want to group devices, by function, by hardware type, etc.  Each device registered on the platform must be registered against a device type.  There are no restrictions about how devices are grouped and the device types, for this workshop we will create a device type representing the ST Microelectronics Discovery Kit devices.
+You need to decide how you want to group devices, by function, by hardware type, etc.  Each device registered on the platform must be registered against a device type.  There are no restrictions about how devices are grouped and the device types, for this workshop we will create a device type representing the TI SimpleLink devices.
 
 ### Step 1 - Add a new device type for SimpleLink device
 
