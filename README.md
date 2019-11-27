@@ -3,17 +3,13 @@ Texas Instruments SimpleLink and IBM Watson IoT Hands-On Workshop
 
 ## Texas Instruments SimpleLink and IBM Watson IoT Hands-On Workshop
 
-Learn how to connect your next IoT Edge design to the Cloud using IBM Watson IoT Platform and the TI SimpleLink CC3235SF LaunchPad.  The CC3235SF features a ARM Cortex® -M4 MCU and wireless connectivity. In this workshop we will attach an BoosterPack sensor expansion board to showcase cloud connectivity features.  We will create a program in the TI Code Composer Studio.  The program will send sensor data to the IBM Watson IoT Platform, where Node-RED running in a Node web application in IBM Cloud will display a Dashboard.  The data will be saved to a Cloudant time series database.
+Learn how to connect your next IoT Edge design to the Cloud using IBM Watson IoT Platform and the TI SimpleLink CC3235SF LaunchPad.  The CC3235SF features a ARM Cortex® -M4 MCU and wireless connectivity.  In this workshop we will attach a BoosterPack sensor expansion board and showcase cloud connectivity features.  We will use TI Code Composer Studio for developing an application running on the TI SimpleLink Microcontroller.  The program will read send sensor data from the sensors on the LaunchPad and BoosterPack and send this data to the IBM Watson IoT Platform, where Node-RED running in a Node web application in IBM Cloud will display a Dashboard.  The data will be saved to a Cloudant time series database for further analysis and display for historic data.
 
 **Presenters:**
 - [**Roger Monk**](https://github.com/rdmonk) - TI System Applications Engineer
 - [**John Walicki**](https://github.com/johnwalicki) - IBM Developer Advocate, CTO IoT / Edge Advocacy
 
-This hands-on workshop will show you how to integrate sensors, wireless connectivity, a low-power microcontroller and sensor libraries into your next IoT Edge design. You’ll then learn to connect the TI SimpleLink LaunchPad to IBM Cloud and Watson IoT Platform to create a new application in minutes using Node-RED.
-
-The hands-on training is a working session – please bring your laptop. Note: Administrator rights is needed for software and driver installation. TI will provide the required TI SimpleLink development boards and software. SPACE IS LIMITED FOR THIS SESSION – FIRST COME, FIRST SEATED.
-
-**The TI SimpleLink boards must be returned after the session.**
+This hands-on workshop will show you how to integrate sensors, wireless connectivity, a low-power microcontroller and sensor libraries into your next IoT Edge design.  You’ll then learn to connect the TI SimpleLink LaunchPad to IBM Cloud and Watson IoT Platform to create a new application in minutes using Node-RED.
 
 ## Learning Objectives:
 In this workshop, you will learn how to:
