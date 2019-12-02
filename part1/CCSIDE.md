@@ -18,6 +18,8 @@
 
 ### Code Composer Studio
 
+Learn about Code Composer Studio IDE [here](http://www.ti.com/design-resources/embedded-development/ccs-development-tools.html)
+
 Proceed to the next section to query the [sensor data](SENSORDATA.md)
 
 *Quick links :*

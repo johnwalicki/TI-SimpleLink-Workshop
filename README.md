@@ -127,7 +127,7 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 - Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part3/CLOUDANT.md)
 
-### Section 14 - Node-RED Charts of Historical Sensor Data
+### Section 16 - Node-RED Charts of Historical Sensor Data
 
 - Instructions : [Node-RED Charts of Historical Sensor Data](part3/HISTORY.md)
 
