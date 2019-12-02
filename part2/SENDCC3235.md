@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [**Send SimpleLink Data**](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
+[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [**Send SimpleLink Data**](SENDCC3235.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
 ***
 
 # Send Device Environmental Sensor Data to Node-RED
@@ -35,8 +35,8 @@ In just a few nodes, Node-RED can send the TI SimpleLink LaunchPad environmental
 
 **Congratulations** - Your TI SimpleLink MCU is sending sensor data to Watson IoT Platform.
 
-Continue to the next step - [Node-RED Setup](NODERED.md)
+Continue to the next step - [Receive SimpleLink Data](SIMPLELINKIOTDATA.md)
 ***
 *Quick links :*
-[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [**Send SimpleLink Data**](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
+[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [**Send SimpleLink Data**](SENDCC3235.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
 ***

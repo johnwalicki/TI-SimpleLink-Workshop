@@ -96,39 +96,9 @@ If you have a custom server certificate configured on the Watson IoT platform th
   ![MQTT in node config](/screenshots/mqtt-InNodeConfig.png)
 - Click **Done** to close the mqtt in node config sidepanel
 
-### Step 2 - Extract the Temperature from the JSON Object
+**Congratulations** - Your MQTT node is ready to receive sensor data from the SimpleLink board.
 
-- Recall that the environmental sensor data was transmitted in a JSON object
-
- ```
- { "d": {"temp":X, "humidity":Y }}
- ```
-
-- Node-RED passes data from node to node in a *msg.payload* JSON object.
-- The **Change** node can be used to extract a particular value so that it can be directly output or manipulated (for instance in a Dashboard chart which we will take advantage of in the next section).
-- From the Function category of the left Node-RED palette, select a **Change** node and drag it onto your Node-RED flow
-- Double-click on the Change node. An **Edit change node** sidebar will open
-- Configure the "to" AZ dropdown to msg. and set it to *payload.d.temp*
-- Click on the red **Done** button
-- Wire the node to the MQTT in node by clicking and dragging the connector on the right of the MQTT in node to the connector on the left of the change node
- ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Change-Node.png)
-
-## Step 3 - Node-RED Debug Nodes
-
-- Debug nodes can be used to print out JSON object values and help you validate your program.
-- From the Output category of the left Node-RED palette, drag two **debug nodes** onto your Node-RED flow.
-- Double-click on one of them. An **Edit debug node** sidebar will open.
-- Configure the Output to print the *complete msg object*.
-- Click on the red **Done** button.
-- Wire the 2 nodes as shown
- ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Debug-Node.png)
-
-### Step 4 - Wire the Node-RED nodes together
-
-- Click on the red **Deploy** button in the upper right corner.
-  - The **mqtt in** node should show status **Connected**
-  - Observe the LaunchPad sensor data in the **debug** tab of the Node-RED right sidebar.  You can expand the twisties to expose the JSON object information. Hover over a debug message in the right sidebar and the node that generated the message will be outlined in orange.
-  ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Deploy.png)
+Continue to the next section - [Send SimpleLink Data](SENDCC3235.md)
 
 ***
 *Quick links :*
