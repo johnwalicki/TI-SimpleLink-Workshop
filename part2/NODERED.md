@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [**Node-RED Setup**(NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
+[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [**Node-RED Setup**](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Sensor Data](SIMPLELINKIOTDATA.md)
 ***
 
 # Node-RED Set up and Configuration in IBM Cloud
@@ -68,9 +68,9 @@ Several panels will help you set up Node-RED in your Watson IoT Starter applicat
 
 ![Node-RED Manage Palette](/screenshots/Node-RED-ManagePalette-a.png)
 
-- Turn to the **Install** tab (3), type **node-red-contrib-ui-level** (4) and press the **Install** button (5).
+- Turn to the **Install** tab, type **node-red-contrib-ui-level** and press the **Install** button.
 
-![Node-RED Manage Palette](/screenshots/Node-RED-ManagePalette-b.png)
+![Node-RED Manage Palette](/screenshots/Node-RED-ManagePalette-c.png)
 
 - Press the **Install** button in the next dialog.
 
