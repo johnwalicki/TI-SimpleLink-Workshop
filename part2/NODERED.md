@@ -19,7 +19,7 @@ Node-RED is an open-source Node.js application that provides a visual programmin
 
 ### Step 1 - Node-RED Visual Programming
 
-Recall that at the beginning of this section, you created a Node-RED Starter Application and bound a IoT Instance to it. Once the Green **Running** icon appears, click the **View App URL** button (6)
+Recall that at the beginning of this section, you created a Node-RED Starter Application and bound a IoT Instance to it. Once the Green **Running** icon appears, click the **View App URL** link
 ![IBM Cloud screenshot](/screenshots/Running-StarterKit-IoTP.png)
 
 ### Step 2 - How to secure your Node-RED Editor in IBM Cloud
@@ -43,29 +43,13 @@ Several panels will help you set up Node-RED in your Watson IoT Starter applicat
 - **Sign in** with your new username and password credentials.
 <img src="/screenshots/IoTP-Starter-NodeRED-Login.png" width="70%">
 
-* The **Node-RED Visual Programming Editor** will open with a default flow. On the left side is a **palette of nodes** that you can drag onto the flow. You can **wire nodes together** to create a program.
+- The **Node-RED Visual Programming Editor** will open with a default flow. On the left side is a **palette of nodes** that you can drag onto the flow. You can **wire nodes together** to create a program.
+
 ![IoTP Node-RED Default Flow](/screenshots/IoTP-Starter-NodeRED-DefaultFlow.png)
-
-
-- The **Node-RED Visual Programming Editor** will open with a default flow.
-- On the left side is a **palette of nodes** that you can drag onto the flow.
-- You can **wire nodes together** to create a program.
-- The sample IoT Starter flow is not applicable to this workshop and can be deleted.
-
-![IoT Starter Flow 1](/screenshots/IoTStarter-DeleteFlow1-a.png)
-
-- Click the **+** icon (7) to add a new tab.  Double Click on the **Flow 2** tab header (8).
-- Rename this tab from **Flow 2** to Receive SimpleLink Data (9)
-
-![IoT Starter Flow 1](/screenshots/IoTStarter-DeleteFlow1-b.png)
-
-- Double Click on the **Flow 1** tab header (10).  Press the **Delete** button. (11)
-
-![IoT Starter Flow 1](/screenshots/IoTStarter-DeleteFlow1-c.png)
 
 ### Step 3 - How to install additional Node-RED nodes
 
-- The IoT Starter Application deployed into IBM Cloud includes just a small subset of Node-RED nodes. The Node-RED palette can be extended with over one thousand additional nodes for different devices and functionality. These NPM nodes can be browsed at <http://flows.nodered.org>
+- The Node-RED Starter Application deployed into IBM Cloud includes just a small subset of Node-RED nodes. The Node-RED palette can be extended with over two thousand additional nodes for different devices and functionality. These NPM nodes can be browsed at <http://flows.nodered.org>
 - In this Step, you will add the **Node-RED Dashboard** nodes to your Internet of Things Starter Application.
 - Click on the Node-RED **Menu** (1) in the upper right corner, then **Manage palette** (2)
 
@@ -90,12 +74,12 @@ Several panels will help you set up Node-RED in your Watson IoT Starter applicat
 
 - Press the **Install** button in the next dialog.
 
-### Step 4 - How to import a prebuilt flow from GitHub
+### Step 5 - How to import a prebuilt flow from GitHub
 
 In this step, you will **learn** how to Import a prebuilt flow from GitHub
 
 - Since configuring Node-RED nodes and wiring them together requires many steps to document in screenshots, there is an easier way to build a flow by importing a prebuilt flow into your IoT Starter Application.
-- Not here in Step 4, but in several sections below, there will be a **Get the Code** link.
+- Not here in Step 5, but in several sections below, there will be a **Get the Code** link.
 - When instructed in those later sections, open the Get the Code github URL, mark or Ctrl-A to select all of the text, and copy the text for the flow to your Clipboard.
 - Click on the Node-RED Menu (6), then Import (7), then Clipboard (8).
 
