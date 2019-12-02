@@ -53,13 +53,13 @@ You now have the opportunity to register a device.
 - Enter a **token** for your device (11) then press **Next** (12).
 ![Create SimpleLink Device](/screenshots/IoTP-DeviceToken.png)
 
-- You will see a summary of the device.  Press **Done** to complete the device registration.
+- You will see a summary of the device.  Press **Finish** to complete the device registration.
 ![Create SimpleLink Device](/screenshots/IoTP-DeviceSummary.png)
 
 - You are now shown a **Device Credentials** page - this is the last chance you get to see the token.  Once you leave this page the token can not be recovered. Write down the Org, Device Type, Device ID and Authentication Token. You might even consider taking a screen shot.
 ![Create SimpleLink Device](/screenshots/IoTP-DeviceCreds.png)
 
-**Congratulations** : Your board is sending data securely to Watson IoT Platform using TLS encrypted MQTT packets and server certificates.
+**Congratulations** : You have created a device and in the next section you will send data securely to Watson IoT Platform using TLS encrypted MQTT packets and server certificates.
 
 Continue to the next step - [Send SimpleLink Data](SENDCC3235.md)
 ***

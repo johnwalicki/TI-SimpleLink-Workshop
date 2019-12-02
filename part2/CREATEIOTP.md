@@ -14,7 +14,7 @@ Instead of reproducing all of the steps necessary to create a Node-RED and Watso
 
 Then, return here so you can proceed to the next step.
 
-**Congratulations** - You have completed the creation of a Node-RED and Watson Internet of Things Platform Starter application in the IBM Cloud..
+**Congratulations** - You have completed the creation of a Node-RED and Watson Internet of Things Platform Starter application in the IBM Cloud.
 
 Continue to the next step - [Device Types and Devices](SIMPLELINKDEVICE.md)
 
