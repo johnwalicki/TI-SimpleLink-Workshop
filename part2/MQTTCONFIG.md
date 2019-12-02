@@ -26,7 +26,7 @@ The Watson IoT platform uses the open source MQTT protocol to allow devices and 
 
 In a prior section you defined a device type and created a device ID in the Watson IoT platform to represent your SimpleLink board. The connection was created as a device. In this section you will connect the Node-RED application as an **Application connection**.
 
-Here are some connection request fixed format types :
+Here are some Watson IoT connection fixed format types :
 
 - Device : **d:*orgId*:*deviceType*:*deviceId***
   - Device connections can only produce events and consume commands as the registered device.
@@ -51,15 +51,15 @@ When subscribing to topics the wildcard character **+** can be used to subscribe
 
 ### Authentication
 
-In an earlier section, you needed to register your device and set an authentication token.  With an Application you need to use an API key and API token to authenticate.
+In an earlier section, you needed to register your device and set an authentication token.  With an Application connection you need to use an API key and API token to authenticate.
 
-When the Watson IoT platform is bound to a CloudFoundry application on the IBM Cloud, a API key and token are automatically generated and can be found in the **Runtime** environment variable section of the application view on the IBM Cloud web user interface
+When the Watson IoT platform is bound to a Cloud Foundry application on the IBM Cloud, a API key and token are automatically generated and can be found in the **Runtime** environment variable section of the application view on the IBM Cloud web user interface
 
 ![env vars](/screenshots/app_IoTCredentials.png)
 
 You can use the automatically generated values or create your own from the App section of the Watson IoT Platform web console.
 
-![IoT App key](screenshots/generateKey.png)
+![IoT App key](/screenshots/generateKey.png)
 
 If you generate your own key you must take a note of the token because, like the device token, once the screen showing the token is closed it is not recoverable.
 
@@ -75,24 +75,25 @@ If you have a custom server certificate configured on the Watson IoT platform th
 
 - From the Input category of the left Node-RED palette, select an **mqtt in node** and drag it onto your Node-RED flow.
 - Double-click on the MQTT node. An **Edit mqtt in node** sidebar will open.
-- Click the pencil icon next to the Server property to configure the MQTT server properties - this will open the **mqtt-broker node** sidebar
+- Click the pencil icon next to the Server property to configure the MQTT server properties.
+  ![new mqtt connection](/screenshots/mqtt-NewBroker.png)
+  - The **Add new mqtt-broker config node** sidebar will open
+    ![add mqtt broker config](/screenshots/mqtt-AddBrokerConfig.png)
   - On the **Connection** tab
   - Enter the server name in the **Server** field (*orgId*.messaging.internetofthings.ibmcloud.com)
   - Enter 8883 as the **Port**
   - Enter the **Client ID** (a:*orgId*:*appId*).  The appID can be any unique string
   - Enable secure (SSL/TLS) connection then select the pencil next to the TLS configuration to open the **Edit tls-config node** sidebar
-    - Upload the rootCA_certificate.pem file you created in part 2 that is enabled on your server as the CA Certificate
     - Enable the Verify server certificate **checkbox**
     - Enter the **Server Name** (*orgId*.messaging.internetofthings.ibmcloud.com).  This sets the SNI extension on the TLS connection
-    - Click on the **Update** button to close the **Edit tls-config node** ![TLS Config](screenshots/TLSconfig.png)
+    - Click on the **Add** button to close the **Edit tls-config node** ![TLS Config](/screenshots/TLSconfig.png)
   - You have finished on the **Connection** tab
-    ![broker connection](screenshots/mqttBrokerConnection.png)
   - Switch to the **Security** tab and enter the Username and Password - get these from the application **Runtime** environment variables tab of your IBM Cloud application. The API Key is used as the Username when connecting and the API Token is the Password.
-    ![mqtt Broker Security](screenshots/mqttBrokerSecurity.png)
+    ![mqtt Broker Security](/screenshots/mqtt-BrokerSecurity.png)
   - Click on the **Update** button to return to the **Edit mqtt in node** sidepanel
 - Set the **Topic** field to **iot-2/type/+/id/+/evt/+/fmt/json**  The wildcard **+** is used to select all events from all devices and all events.  The topic requires that the event contains JSON data.
 - Select the **Output** as **a parsed JSON object**
-  ![MQTT in node config](screenshots/mqttInNodeConfig.png)
+  ![MQTT in node config](/screenshots/mqtt-InNodeConfig.png)
 - Click **Done** to close the mqtt in node config sidepanel
 
 ### Step 2 - Extract the Temperature from the JSON Object
@@ -110,24 +111,24 @@ If you have a custom server certificate configured on the Watson IoT platform th
 - Configure the "to" AZ dropdown to msg. and set it to *payload.d.temp*
 - Click on the red **Done** button
 - Wire the node to the MQTT in node by clicking and dragging the connector on the right of the MQTT in node to the connector on the left of the change node
- ![Receive DHT Data](screenshots/ESP8266-ReceiveDHTdata-Changenode.png)
+ ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Change-Node.png)
 
 ## Step 3 - Node-RED Debug Nodes
 
 - Debug nodes can be used to print out JSON object values and help you validate your program.
-- From the Output category of the left Node-RED palette, drag two **debug nodes** onto your Node-RED flow (7).
+- From the Output category of the left Node-RED palette, drag two **debug nodes** onto your Node-RED flow.
 - Double-click on one of them. An **Edit debug node** sidebar will open.
-- Configure the Output to print the *complete msg object* (8).
+- Configure the Output to print the *complete msg object*.
 - Click on the red **Done** button.
 - Wire the 2 nodes as shown
- ![Receive DHT Data](screenshots/ESP8266-ReceiveDHTdata-Debugnode.png)
+ ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Debug-Node.png)
 
 ### Step 4 - Wire the Node-RED nodes together
 
 - Click on the red **Deploy** button in the upper right corner.
   - The **mqtt in** node should show status **Connected**
-  - Observe the DHT sensor data in the **debug** tab of the Node-RED right sidebar.  You can expand the twisties to expose the JSON object information. Hover over a debug message in the right sidebar and the node that generated the message will be outlined in orange.
-  ![Receive DHT Data](screenshots/ESP8266-ReceiveDHTdata-Deploy.png)
+  - Observe the LaunchPad sensor data in the **debug** tab of the Node-RED right sidebar.  You can expand the twisties to expose the JSON object information. Hover over a debug message in the right sidebar and the node that generated the message will be outlined in orange.
+  ![Receive Sensor Data](/screenshots/mqtt-ReceiveSensorData-Deploy.png)
 
 ***
 *Quick links :*
