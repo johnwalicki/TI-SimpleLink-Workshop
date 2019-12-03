@@ -21,7 +21,7 @@ While real-time charts of sensor data and threshold alerts are useful, the power
 Open the “Get the Code” github URL listed below, mark or Ctrl-A to select all of the text, and copy the text for the flow to your Clipboard. Recall from a previous section, click on the Node-RED Menu, then Import, then Clipboard. Paste the text of the flow into the Import nodes dialog and press the red Import button.
 
 <p align="center">
-  <strong>Get the Code: <a href="/flows/NR-Cloudant-ToFSensorData.json">Node-RED Cloud Storage Flow</strong></a>
+  <strong>Get the Code: <a href="/flows/NRD-Cloudant-ToFSensorData.json">Node-RED Cloud Storage Flow</strong></a>
 </p>
 
 ### Step 2 - Store IoT Sensor Data with Node-RED
