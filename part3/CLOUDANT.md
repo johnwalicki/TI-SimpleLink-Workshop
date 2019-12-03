@@ -40,7 +40,7 @@ In this Step you will use Node-RED to store IoT Sensor data from the TI SimpleLi
 
 ### Step 3 - Observe Sensor Data being added to the Cloudant database
 
-- Return to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps/) and your IoT Starter application. **Click** on the cloudantNoSQLDB (1) service connection.
+- Return to the [IBM Cloud dashboard](https://cloud.ibm.com/apps/) and your Node-RED Starter application. **Click** on the cloudantNoSQLDB (1) service connection.
  ![Cloudant NoSQL Service Connection](/screenshots/CloudantNoSQLServiceConnection.png)
 - Click on the *Alias of Cloudant-NNN* link
  ![Cloudant NoSQL Service Instance](/screenshots/CloudantNoSQLServiceInstance.png)
@@ -48,7 +48,7 @@ In this Step you will use Node-RED to store IoT Sensor data from the TI SimpleLi
  ![Cloudant NoSQL Service Instance](/screenshots/CloudantNoSQLServiceAlias.png)
 - The IoT Sensor device data is stored in the Cloudant service.
  ![Cloudant NoSQL Databases](/screenshots/CloudantNoSQLDatabases.png)
-- Click on historicaldata1 and then observe the **table** view of temperature, humidity and timestamp data.
+- Click on mmwave-london database and then observe the **table** view of distance and timestamp data.
  ![Cloudant NoSQL Historian Data](/screenshots/CloudantNoSQLHistorianDB.png)
 
 ***

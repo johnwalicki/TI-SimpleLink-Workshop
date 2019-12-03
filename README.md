@@ -54,7 +54,7 @@ In this workshop, you will learn how to:
 ## Prerequisites
 This tutorial can be completed using an IBM Cloud Lite account.
 
-* Create an [IBM Cloud account](https://ibm.biz/BdzgST)
+* Create an [IBM Cloud account](https://ibm.biz/BdzNRy)
 * Log into [IBM Cloud](https://cloud.ibm.com/login)
 
 ## Part 1
@@ -85,49 +85,49 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 ## Part 2
 
-### Section 6 - Create an Internet of Things Platform Starter application
+### Section 5 - Create an Internet of Things Platform Starter application
 
 - Instructions : [Create an Internet of Things Platform Starter application](part2/CREATEIOTP.md)
 
-### Section 7 - Create a Watson IoT Platform Device Type and Device
+### Section 6 - Create a Watson IoT Platform Device Type and Device
 
 - Instructions : [Create a Watson IoT Platform Device Type and Device](part2/SIMPLELINKDEVICE.md)
 
-### Section 8 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
+### Section 7 - Send Sensor Data from the SimpleLink LaunchPad to Node-RED Cloud
 
 - Instructions : [Send Sensor Data from the LaunchPad to IBM Cloud](part2/SENDCC3235.md)
 
-### Section 9 - Node-RED Set up and Configuration in IBM Cloud
+### Section 8 - Node-RED Set up and Configuration in IBM Cloud
 
 - Instructions : [Node-RED Set up and Configuration in IBM Cloud](part2/NODERED.md)
 
-### Section 10 - Configure MQTT Node to Receive Sensor data
+### Section 9 - Configure MQTT Node to Receive Sensor data
 
 - Instructions : [Configure the Node-RED MQTT input node to receive sensor data](part2/MQTTCONFIG.md)
 
-### Section 11 - Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED
+### Section 10 - Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED
 
 - Instructions : [Receive SimpleLink LaunchPad Environmental Sensor Data in Node-RED](part2/SIMPLELINKIOTDATA.md)
 
 ## Part 3
 
-### Section 12 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
+### Section 11 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
 
 - Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part3/DASHBOARD.md)
 
-### Section 13 - mmWave BoosterPack - Time of Flight Sensor Data
+### Section 12 - mmWave BoosterPack - Time of Flight Sensor Data
 
 - Instructions : [Add the mmWave BoosterPack to your LaunchPad and compile a MCU binary](part3/MMWAVETOF.md)
 
-### Section 14 - Node-RED Dashboard - Plot ToF Distance Sensor Data
+### Section 13 - Node-RED Dashboard - Plot ToF Distance Sensor Data
 
 - Instructions : [Plot Time of Flight Sensor Data on a Node-RED Dashboard](TOFDASH.md)
 
-### Section 15 - Store Data in Cloud Storage for Historical Data Analytics
+### Section 14 - Store Data in Cloud Storage for Historical Data Analytics
 
 - Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part3/CLOUDANT.md)
 
-### Section 16 - Node-RED Charts of Historical Sensor Data
+### Section 15 - Node-RED Charts of Historical Sensor Data
 
 - Instructions : [Node-RED Charts of Historical Sensor Data](part3/HISTORY.md)
 
