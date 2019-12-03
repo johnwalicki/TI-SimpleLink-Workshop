@@ -1,0 +1,524 @@
+[
+    {
+        "id": "6df19fac.d2d428",
+        "type": "tab",
+        "label": "mmWave Range",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "21b7fdd7.669b4a",
+        "type": "change",
+        "z": "6df19fac.d2d428",
+        "name": "Range",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.mmwave_objdist",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "cbfda510.14a7a8"
+            ]
+        ]
+    },
+    {
+        "id": "cbfda510.14a7a8",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "Is Number",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "7ed0a62f.a6e64",
+                "1624421a.cb1d76",
+                "9060d061.3e0898",
+                "8f0aaaee.c7653",
+                "c4fedda2.d25b"
+            ]
+        ]
+    },
+    {
+        "id": "7ed0a62f.a6e64",
+        "type": "ui_level",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 2,
+        "width": "8",
+        "height": "2",
+        "name": "",
+        "label": "mmWave Range",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "600",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "mm",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "textoptions": "default",
+        "colorText": "#000000",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "off",
+        "peakmode": false,
+        "peaktime": "infinity",
+        "x": 770,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1624421a.cb1d76",
+        "type": "ui_chart",
+        "z": "6df19fac.d2d428",
+        "name": "",
+        "group": "a45a7f1.630868",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "mmWave Range (mm)",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "600",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9060d061.3e0898",
+        "type": "ui_gauge",
+        "z": "6df19fac.d2d428",
+        "name": "",
+        "group": "a45a7f1.630868",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Height (mm)",
+        "label": "millimeters",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "600",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8f0aaaee.c7653",
+        "type": "debug",
+        "z": "6df19fac.d2d428",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c4fedda2.d25b",
+        "type": "ui_level",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "mmWave Range",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "600",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "mm",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "1",
+        "fontValue": "5",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "auto",
+        "peakmode": false,
+        "peaktime": "10000",
+        "x": 770,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d9a3a23b.f43258",
+        "type": "ui_text",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Freq (GHz)",
+        "format": "{{msg.payload.d.mmwave_freq}}",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4e6a3af9.6144a4",
+        "type": "ui_text",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Object Distance (mm)",
+        "format": "{{msg.payload.d.mmwave_objdist}}",
+        "layout": "row-spread",
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "67a52eba.cdcf08",
+        "type": "ui_text",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tx Temp (Cº)",
+        "format": "{{msg.payload.d.mmwave_temptx}}",
+        "layout": "row-spread",
+        "x": 800,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "566f6f5a.67fcf",
+        "type": "ui_text",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Rx Temp (Cº)",
+        "format": "{{msg.payload.d.mmwave_temprx}}",
+        "layout": "row-spread",
+        "x": 800,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c57efeb1.4f07d8",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "mmwave_freq",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "mmwave_freq",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "d9a3a23b.f43258"
+            ]
+        ]
+    },
+    {
+        "id": "5d896412.3ad9c4",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "mmwave_objdist",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "mmwave_objdist",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "4e6a3af9.6144a4",
+                "21b7fdd7.669b4a"
+            ]
+        ]
+    },
+    {
+        "id": "c4536863.329c18",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "mmwave_temptx",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "mmwave_temptx",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "67a52eba.cdcf08"
+            ]
+        ]
+    },
+    {
+        "id": "d71e749e.01d5e8",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "mmwave_temprx",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "mmwave_temprx",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "566f6f5a.67fcf"
+            ]
+        ]
+    },
+    {
+        "id": "9d564a6a.f2a76",
+        "type": "mqtt in",
+        "z": "6df19fac.d2d428",
+        "name": "SimpleLink MQTT",
+        "topic": "iot-2/type/+/id/+/evt/+/fmt/json",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "69168cb2.e9448c",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "c57efeb1.4f07d8",
+                "5d896412.3ad9c4",
+                "c4536863.329c18",
+                "d71e749e.01d5e8",
+                "29eff4e1.10fcd4"
+            ]
+        ]
+    },
+    {
+        "id": "3b7e864b.95e362",
+        "type": "ui_text",
+        "z": "6df19fac.d2d428",
+        "group": "1d62d15.c09ae2f",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uptime (sec)",
+        "format": "{{msg.payload.d.mmwave_uptime}}",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "29eff4e1.10fcd4",
+        "type": "switch",
+        "z": "6df19fac.d2d428",
+        "name": "mmwave_uptime",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "mmwave_uptime",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "3b7e864b.95e362"
+            ]
+        ]
+    },
+    {
+        "id": "1d62d15.c09ae2f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Level",
+        "tab": "2259d26a.0535d6",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "a45a7f1.630868",
+        "type": "ui_group",
+        "z": "",
+        "name": "Range",
+        "tab": "2259d26a.0535d6",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "69168cb2.e9448c",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "abc123.messaging.internetofthings.ibmcloud.com",
+        "port": "8883",
+        "tls": "e3011909.3230b8",
+        "clientid": "a:abc123:ti-simplelink",
+        "usetls": true,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "2259d26a.0535d6",
+        "type": "ui_tab",
+        "z": "",
+        "name": "mmWave",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e3011909.3230b8",
+        "type": "tls-config",
+        "z": "",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "abc123.messaging.internetofthings.ibmcloud.com",
+        "verifyservercert": true
+    }
+]

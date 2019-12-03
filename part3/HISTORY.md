@@ -23,24 +23,24 @@ The previous section stored the Device environment sensor data into a Cloudant D
   <strong>Get the Code: <a href="/flows/NRD-TI-HistorianChart-SensorData.json">Node-RED Historian Chart Flow</strong></a>
 </p>
 
-- Click on the **Cloudant** node on the Historical Chart flow to confirm that it is configured to your IoT Platform Cloudant service instance.
+- Click on the **Cloudant** node on the Historical Chart flow to confirm that it is configured to your Cloudant service instance.
 - Click the **Deploy** button on the top of menu bar to deploy the Node-RED flow.
 
 ### Step 2 - Graph Historical IoT Sensor data stored in a database using Node-RED
 
-- The Historical Chart flow reads the IoT Sensor Device data from the Cloudant database and formats it into a Chart array before sending the data to a Node-RED Chart node.
+- The Historical Chart flow reads the IoT Sensor Device data from the Cloudant database and formats it into a Chart array before sending the data to Node-RED Chart nodes that show bar heights and a line graph.
 
-![Node-RED Historian Flow](/screenshots/NRD-TI-Dashboard-TempHistorian-flow.png)
+![Node-RED Historian Flow](/screenshots/NRD-TI-mmWave-Historian-Dashboard-flow.png)
 
 ### Step 3 - Historian Charts of Device Environmental Sensor data
 
 - Turn to the Node-RED Dashboard browser tab, click on the menu tab in the upper left corner, and select the Historical Data tab.
-- On the Historical Data dashboard, click on the **LOAD SimpleLink DATA** button to start the data visualization.
+- On the Historical Data dashboard, click on the **LOAD IoT SENSOR DATA** button to start the data visualization.
 - The button will trigger the read of the historian DB records created in the previous section.
 - In the *Create a Chart Array for Chart.js* function node the time series temperature data from the Device Environmental sensor is formatted into a Chart Array and sorted chronologically.
 - The Chart Array is passed to the Node-RED Chart node to render the graph.
 
-![Node-RED Historian Flow](/screenshots/NRD-TI-Dashboard-TempHistorian-Chart.png)
+![Node-RED Historian Flow](/screenshots/NRD-TI-mmWave-Historian-Dashboard-Chart.png)
 
 ***
 *Quick links :*

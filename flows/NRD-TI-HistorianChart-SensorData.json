@@ -1,0 +1,576 @@
+[
+    {
+        "id": "8e50368b.8ced88",
+        "type": "tab",
+        "label": "Historical Chart",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d9560e3f.72ad9",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "Line Chart data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 960,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "41672081.6b5928",
+        "type": "ui_chart",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "group": "51c21da0.0ff97c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "mmWave Distance Historian Time Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "5000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c834be14.5c01",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "Cloudant records",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8a99dcc3.5a4d78",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "Clear Chart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "41672081.6b5928",
+                "6697dd31.9e01f4"
+            ]
+        ]
+    },
+    {
+        "id": "aec6f9fc.99e2a8",
+        "type": "comment",
+        "z": "8e50368b.8ced88",
+        "name": "Select Date Range",
+        "info": "\n1572566401000\n     86400000\n1577750401000",
+        "x": 270,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5fa74308.070e34",
+        "type": "ui_date_picker",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "label": "Start Date",
+        "group": "2fd459fb.e45ce6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 430,
+        "y": 380,
+        "wires": [
+            [
+                "5dcc21d6.fcceb"
+            ]
+        ]
+    },
+    {
+        "id": "aef2038e.ac5108",
+        "type": "ui_date_picker",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "label": "End Date",
+        "group": "2fd459fb.e45ce6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "cc39e98b.0eec98"
+            ]
+        ]
+    },
+    {
+        "id": "ca118dd5.37e1f8",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 830,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f537367f.161148",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 910,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "16ced4de.989dd3",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "Start Date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1572566401000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 380,
+        "wires": [
+            [
+                "5fa74308.070e34"
+            ]
+        ]
+    },
+    {
+        "id": "e202775c.7b083",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "End Date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1577750401000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 420,
+        "wires": [
+            [
+                "aef2038e.ac5108"
+            ]
+        ]
+    },
+    {
+        "id": "5dcc21d6.fcceb",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "Start Time Range",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start-time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "ca118dd5.37e1f8"
+            ]
+        ]
+    },
+    {
+        "id": "cc39e98b.0eec98",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "End Time Range Inclusive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end-time",
+                "pt": "flow",
+                "to": "payload + 86400000",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 420,
+        "wires": [
+            [
+                "f537367f.161148"
+            ]
+        ]
+    },
+    {
+        "id": "58d6024b.2ea35c",
+        "type": "inject",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "e202775c.7b083",
+                "16ced4de.989dd3"
+            ]
+        ]
+    },
+    {
+        "id": "53a08342.79523c",
+        "type": "ui_button",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "group": "2fd459fb.e45ce6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear Chart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "8a99dcc3.5a4d78"
+            ]
+        ]
+    },
+    {
+        "id": "1d1c7550.3176b3",
+        "type": "function",
+        "z": "8e50368b.8ced88",
+        "name": "Create a Bar Chart Array for Chart.js",
+        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\n//var starttime = flow.get(\"start-time\");\n//var endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// Now we need to sort on the time so that we give the Chart node an array in time order\n// Bar Charts don't have a time scale on the x axis so sort by time first.\nvar DistanceData = msg.payload ;\nDistanceData.sort(function sortNumber(a,b) { return a.time - b.time; });\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[DistanceData[0].distance],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; DistanceData.length; i++ ) {\n    //if( (DistanceData[i].time >= starttime) && (DistanceData[i].time <= endtime) ) {\n       ChartData[0].data.push( DistanceData[i].distance );\n    //}\n}\n\ndelete msg.cloudant ;\nmsg.payload = ChartData;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "244094d5.0c2e14",
+                "6697dd31.9e01f4"
+            ]
+        ]
+    },
+    {
+        "id": "6697dd31.9e01f4",
+        "type": "ui_chart",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "group": "51c21da0.0ff97c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "mmWave Distance Historian Height Chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "5000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f230a0a1.3e92e8",
+        "type": "function",
+        "z": "8e50368b.8ced88",
+        "name": "Create a Chart Array for Chart.js",
+        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js\n\n//var starttime = flow.get(\"start-time\");\n//var endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].time,\"y\":msg.payload[0].distance}]],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; i < msg.payload.length; i++ ) {\n    //if( (msg.payload[i].time >= starttime) && (msg.payload[i].time <= endtime) ) {\n        // This temperature reading is within the Date Range\n        ChartData[0].data[0].push( { \"x\":msg.payload[i].time,\"y\":msg.payload[i].distance } );\n    //}    \n}\n// Now we need to sort on the time so that we give the Chart node an array in time order\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "41672081.6b5928",
+                "d9560e3f.72ad9"
+            ]
+        ]
+    },
+    {
+        "id": "244094d5.0c2e14",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "Bar Chart data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 960,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1fe56bf7.0f7944",
+        "type": "cloudant in",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "cloudant": "",
+        "database": "mmwave-london",
+        "service": "TIsub1GHz-cloudantNoSQLDB",
+        "search": "_idx_",
+        "design": "byTime",
+        "index": "timeseries-index",
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "1d1c7550.3176b3",
+                "f230a0a1.3e92e8",
+                "c834be14.5c01"
+            ]
+        ]
+    },
+    {
+        "id": "ae227c92.71d95",
+        "type": "change",
+        "z": "8e50368b.8ced88",
+        "name": "Date range",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start-time",
+                "pt": "msg",
+                "to": "start-time",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "end-time",
+                "pt": "msg",
+                "to": "end-time",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "849f425b.d41b6"
+            ]
+        ]
+    },
+    {
+        "id": "849f425b.d41b6",
+        "type": "template",
+        "z": "8e50368b.8ced88",
+        "name": "Build Query",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "time:[{{start-time}} TO {{end-time}}]",
+        "output": "str",
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "1fe56bf7.0f7944",
+                "c1b59679.1026"
+            ]
+        ]
+    },
+    {
+        "id": "927ef31f.d1cf88",
+        "type": "ui_button",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "group": "2fd459fb.e45ce6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load IoT Sensor Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "ae227c92.71d95"
+            ]
+        ]
+    },
+    {
+        "id": "c1b59679.1026",
+        "type": "debug",
+        "z": "8e50368b.8ced88",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "51c21da0.0ff97c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Historical Data",
+        "tab": "be65492a.3b8a6",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "2fd459fb.e45ce6",
+        "type": "ui_group",
+        "z": "",
+        "name": "Chart Controls",
+        "tab": "be65492a.3b8a6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "be65492a.3b8a6",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Historical Chart",
+        "icon": "fa-area-chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
