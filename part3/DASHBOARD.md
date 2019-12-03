@@ -7,7 +7,7 @@
 
 ## Lab Objectives
 
-In this lab you will import Node-RED flows which create Dashboard Charts. After learning about Node-RED Dashboard Charts, you will be able to display temperature and humidity graphs of the Device environmental sensors.  You will learn:
+In this lab you will import Node-RED flows which create Dashboard Charts. After learning about Node-RED Dashboard Charts, you will be able to display temperature and accelerometer graphs of the SimpleLink LaunchPad environmental sensors.  You will learn:
 
 - How to create a Node-RED Dashboard
 - Experiment with Chart types
@@ -29,7 +29,7 @@ Open the “Get the Code” github URL listed below, mark or Ctrl-A to select al
 ### Step 2 - Learn about various Node-RED Dashboard Chart types
 
 - You might have noticed that the flow import in the prior step actually created three tabs.  These are called Node-RED flows.
-- The **Chart Intro** flow introduces you to the various Node-RED Dashboard Chart types that are available.  You can create Line charts, various Pie chart styles – Pie, Donut, Polar Area, Radar - and vertical and horizontal Bar charts.
+- The **Chart Examples** flow introduces you to the various Node-RED Dashboard Chart types that are available.  You can create Line charts, various Pie chart styles – Pie, Donut, Polar Area, Radar - and vertical and horizontal Bar charts.
  ![Node-RED Chart Intro](/screenshots/Node-RED-ChartIntro-flow.png)
 - For illustration, the **Fill Single Chart Array** function node above fills an array of static sample data and sends the data to the **Chart** node to visualize.
 
@@ -53,37 +53,32 @@ The next Node-RED flow - **Dashboard Intro** - uses a variety of UI widgets to d
 
 Now that you have learned about Node-RED Dashboard and Chart types, you are ready to plot the real-time device environmental sensor data.
 
-- Turn to the next flow - **Plot TI SimpleLink Sensor Data**
-- The **IBM IoT** node is already configured to receive *status* Device Events from the TI SimpleLink Device Type.
-- The **Change** nodes extract the ```msg.payload.d.temp``` and ```msg.payload.d.humidity``` values from the JSON object sent over MQTT from the device environmental sensor to Watson IoT Platform.
-- The environmental sensor values are sent to two charts to plot Temperature and Humidity.
- ![NRD SimpleLink chart flow](/screenshots/Node-RED-Dashboard-TI-flow.png)
+- Turn to the next flow - **SimpleLink CC3235SF**
+- Click into the **mqtt** node and use the Server drop down to select your MQTT configuration for the TI SimpleLink Device Type.
+- The **Change** nodes extract the ```msg.payload.d.temp``` and ```msg.payload.d.accel_x|y|z``` values from the JSON object sent over MQTT from the device environmental sensor to Watson IoT Platform.
+- The environmental sensor values are sent to two charts to plot Temperature and Motion.
+ ![NRD SimpleLink chart flow](/screenshots/NRD-TI-SimpleLink-TempMotion-flow.png)
 - Turn to the Node-RED Dashboard browser tab that you launched in Step 2, click on the tab in the upper left corner, and select the **SimpleLink Workshop** tab.
-
-<p align="center">
-<img height="335" width="213" src="/screenshots/NRD-TI-SimpleLink-TempHum-Chart.png">
-</p>
+ ![NRD SimpleLink Temp Motion Dashboard](/screenshots/NRD-TI-SimpleLink-TempMotion-Chart.png)
 
 ### Step 5 - Trigger Alerts when Real-Time Sensor Data Exceeds a Threshold Value
 
-Often IoT devices and sensors are deployed so that alerts can be triggered when the real time sensor data exceeds a threshold value.  In this last Step, the flow checks the temperature values and, if the temperature exceeds the threshold, triggers a Node-RED Dashboard notification.
+Often IoT devices and sensors are deployed so that alerts can be triggered when the real time sensor data exceeds a threshold value.  In this last Step, the flow checks the status of the button on the LaunchPad and, if the button has been pressed, triggers a Node-RED Dashboard notification.
 
 - In the prior step, the flow included three nodes that have not yet been discussed.
-- A **Switch** node is configured to *Warn on High Values* by testing if ```msg.payload.d.temp``` is greater than 30C.
-- A **Template** node is configured to construct a sentence ```Alert : Critical Value Detected {{payload.d.temp}}```
+- A **Switch** node is configured to *Alert on Button Press* by testing if ```msg.payload.d.buttonToggle``` is true.
+- A **Template** node is configured to construct a sentence ```Alert : The button has been pressed!```
 - The Alert message is sent to a **Node-RED Dashboard Notification** node to display in the browser.
 - This flow could be extended to call a **Twilio** node to send a SMS message.  It could raise an alarm in another system by triggering a REST API call to the manufacturing production operations systems.
 
- ![NRD TI SimpleLink chart flow](/screenshots/Node-RED-Dashboard-SimpleLink-flow.png)
+ ![NRD TI SimpleLink chart flow](/screenshots/NRD-TI-SimpleLink-TempMotion-flow.png)
 
-- Return to the Node-RED Dashboard **TI SimpleLink Workshop** tab and increase the temperature of your TI SimpleLink LaunchPad sensor above 30C.
+- Return to the Node-RED Dashboard **TI SimpleLink Workshop** tab and press the buttonToggle on your TI SimpleLink LaunchPad.
 
- <p align="center">
- <img height="384" width="213" src="/screenshots/NRD-TI-SimpleLink-TempHum-ChartAlert.png">
- </p>
+ ![SimpleLink  Alert](/screenshots/NRD-TI-SimpleLink-TempMotion-ChartAlert.png)
 
  ### Congratulations - Node-RED Sensor Dashboard configured
- Continue to the next step - mmWave Distance Sensors [](MMWAVETOF.md)
+ Continue to the next step - [mmWave Distance Sensors ](MMWAVETOF.md)
 
  ***
  *Quick links :*
