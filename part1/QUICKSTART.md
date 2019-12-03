@@ -33,13 +33,13 @@ Quickstart allows you to experiment without having to register.
 
 ![CCS Project - Build Project](/screenshots/CCS-programatmain.png)
 
-- Next open a serial terminal (115200,n,8,1) to observer the console output from the LaunchPad board *XDS110 Application/User* Uart 
+- Next open a serial terminal (115200,n,8,1) to observe the console output from the LaunchPad board *XDS110 Application/User* Uart 
 
-- Finally Click the 'Run' button to continue.
+- Finally Click the 'Run/Resume(F8)' button to continue.
 
 ![CCS Project - Run/Resume](/screenshots/CCS-runresume.png)
 
-- The serial terminal will show the board starting up, sensor initialisatio and TLS connection to IBM MQTT Broker. 
+- The serial terminal will show the board starting up, sensor initialisation and TLS connection to IBM MQTT Broker. 
 
 ![Terminal - Quickstart](/screenshots/TERM-quickstart.png)
 
@@ -47,13 +47,18 @@ Quickstart allows you to experiment without having to register.
 
 ![Terminal - Quickstart](/screenshots/TERM-quickstart-json.png)
 
-- Note the 'client id' of the board (comprised of it's MAC address) shown in the console view.  The 'device id' is the highlighted part of the client id.
+- Note the 'client id' of the board (based on a generic mylaunchpad name + MAC address) shown in the console view.  The 'device id' is the highlighted part of the client id.
 
 ![Terminal - Quickstart](/screenshots/TERM-quickstart-id.png)
 
 - Connect to [Watson IoT Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/) and enter the device id and observe data from the board.  Press the SW2 button a few times and observe the button state toggling!
 
 ![Terminal - Quickstart](/screenshots/QS-buttontoggle.png)
+
+**Congratulations** - Your TI SimpleLink MCU is sending sensor data to Quickstart Watson IoT Platform.
+
+Continue to the next step - [](part2/CREATEIOTP.md)
+***
 
 *Quick links :*
 [Home](/README.md) - [Unbox your SimpleLink CC3235SF LaunchPad](UNBOX.md) - [Code Composer Studio](CCSIDE.md) - [Sensor Data](SENSORDATA.md) - [**Send Data to QuickStart**](QUICKSTART.md)
