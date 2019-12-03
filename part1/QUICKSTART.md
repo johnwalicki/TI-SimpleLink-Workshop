@@ -57,7 +57,7 @@ Quickstart allows you to experiment without having to register.
 
 **Congratulations** - Your TI SimpleLink MCU is sending sensor data to Quickstart Watson IoT Platform.
 
-Continue to the next step - [](/part2/CREATEIOTP.md)
+Continue to the next step - [Create an Internet of Things Platform Starter application](/part2/CREATEIOTP.md)
 ***
 
 *Quick links :*
