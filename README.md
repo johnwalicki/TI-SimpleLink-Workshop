@@ -14,16 +14,16 @@ This hands-on workshop will show you how to integrate sensors, wireless connecti
 ## Learning Objectives:
 In this workshop, you will learn how to:
 
-### Part 1
+### Part 1 - Sending Data to IBM Quickstart
 
 - Learn about the [TI SimpleLink CC3235SF](http://www.ti.com/product/CC3235SF)
 - Learn about the [TI SimpleLink WiFi CC3235SF dual band LaunchPad](http://www.ti.com/tool/LAUNCHXL-CC3235SF) development kit
 - Learn about the [TI BoosterPack Boards](http://www.ti.com/design-resources/embedded-development/hardware-kits-boards.html)
 - Install [Code Composer Studio IDE](http://www.ti.com/design-resources/embedded-development/ccs-development-tools.html) on your laptop
-- Compile and run Environmental Sensor programs to observe temperature, humidity, acceleration and gyroscope information
+- Compile and run Environmental Sensor programs to observe temperature, humidity, accelerometer information
 - Send TI SimpleLink CC3235SF LaunchPad data to [Watson IoT Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/)
 
-### Part 2
+### Part 2 - Using IBM Watson Registered Service and processing with Node-RED
 
 - Create an IoT Starter Kit application running in IBM Cloud
 - Launch the Watson IoT Starter application
@@ -37,13 +37,18 @@ In this workshop, you will learn how to:
 - Output the TI SimpleLink CC3235SF LaunchPad temperature and humidity data
 - Work with JSON data and observe the sensor results in the Debug sidebar
 
-### Part 3
+### Part 3 - Using Node-RED Dashboards and adding mmWave Sensor Data
 
 - Create a Node-RED Dashboard
 - Experiment with Chart types
 - Plot Real Time sensor data
-- Attach the mmWave BoosterPack to your LaunchPad and compile a MCU binary
-- Send Time of Flight (ToF) distance sensor data to Watson IoT
+- Learn about the [TI IWR6843 mmWave sensor](http://www.ti.com/product/IWR6843)
+- Learn about the [TI ISK6843 standard antenna sensor module](http://www.ti.com/tool/MMWAVEICBOOST)
+- Learn about the [TI mmWave sensor carrier boosterpack](http://www.ti.com/tool/MMWAVEICBOOST)
+- Configure the mmWave sensor
+- Use [TI GUI Composer](http://dev.ti.com/gc) to view and configure the mmWave sensor data
+- Connect the mmWave sensor boosterpack to the Wi-Fi LaunchPad and compile an application on the LaunchPad to receive the mmWave data
+- Send mmWave Time of Flight (ToF) distance sensor data to Watson IoT
 - Plot ToF distance sensor data
 - Create a Node-RED flow that uses the Cloudant node
 - Format a time series database record
@@ -59,13 +64,24 @@ This tutorial can be completed using an IBM Cloud Lite account.
 
 ## Part 1
 
+### Sections 1-4 - Installing tools, configuring the LaunchPad board
+
+In this workshop, the laptops provided have been pre-installed with the necessary software and software development kits.  This includes the following :-
+
+- [TI Code Composer Studio IDE](http://www.ti.com/design-resources/embedded-development/ccs-development-tools.html)
+- [TI Uniflash]()
+- [TI SimpleLink Wi-Fi CC32xx SDK](http://www.ti.com/tool/SIMPLELINK-CC32XX-SDK)
+- [TI SimpleLink Sensors and Actuators Plugin](http://www.ti.com/tool/SIMPLELINK-SDK-SENSOR-ACTUATOR-PLUGIN)
+- [TI SimpleLink Plugin for IBM Watson](http://www.ti.com/tool/SIMPLELINK-SDK-PLUGIN-FOR-WATSONIOT)
+
+<!--
 ### Section 1 - Unbox the TI SimpleLink CC3235SF LaunchPad development board
 
 This section shows you how to unpack the TI SimpleLink CC3235SF LaunchPad development board and connect the Sensor expansion board.
 
 - Instructions : [Unpack the TI SimpleLink CC3235SF LaunchPad and BoosterPacks](part1/UNBOX.md)
 
-### Section 2 -  connect to the LaunchPad
+### Section 2 - Connect the LaunchPad to the cloud
 
 This section shows you how to program the TI SimpleLink CC3235SF LaunchPad, connect to the WiFi and create the Watson IoT Cloud project
 
@@ -76,8 +92,9 @@ This section shows you how to program the TI SimpleLink CC3235SF LaunchPad, conn
 This section shows you how to run the Environmental Sensor programs to observe temperature, humidity, acceleration and gyroscope information
 
 - Instructions : [Environmental Sensor Data](part1/SENSORDATA.md)
+-->
 
-### Section 4 - Send TI SimpleLink LaunchPad data to Watson IoT Quickstart
+### Section 5 - Send TI SimpleLink LaunchPad data to Watson IoT Quickstart
 
 This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/)
 
