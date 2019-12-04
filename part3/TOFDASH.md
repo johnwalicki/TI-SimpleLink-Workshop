@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [**mmWave Range Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [**mmWave Range Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # Plot mmWave Distance on a Node-RED Dashboard
@@ -32,7 +32,7 @@ IoT sensors that can measure distance with good accuracy are useful in numerous 
 
 ### Step 3 - mmWave Range Dashboard
 
-- Turn to the Node-RED Dashboard browser tab, click on the menu tab in the upper left corner, and select the mmWave ToF tab.
+- Turn to the Node-RED Dashboard browser tab, click on the menu tab in the upper left corner, and select the mmWave Range tab.
 - On the mmWave dashboard, you will see a bar chart, a Level and a Gauge.
 
 ![Node-RED mmWave Range Flow](/screenshots/NRD-TI-mmWave-Dashboard.png)
