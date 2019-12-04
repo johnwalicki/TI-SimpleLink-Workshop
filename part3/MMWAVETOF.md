@@ -15,14 +15,14 @@ In this lab you will attach the mmWave BoosterPack to your TI SimpleLink LaunchP
 ### Introduction
 
 Summarize and link to these articles
-http://www.ti.com/sensors/mmwave/what-is-mmwave.html
-http://www.ti.com/sensors/mmwave/overview.html
+- http://www.ti.com/sensors/mmwave/what-is-mmwave.html
+- http://www.ti.com/sensors/mmwave/overview.html
 
-### Step 1 - Flashing the 'High Accuracy Demo' binary onto the IWR6843.  
+### Step 1 - Flashing the 'High Accuracy Demo' binary onto the IWR6843
 
 *This step has been prior to the lab session*.  For referece, instructions for this can be found in the [TI mmWave Toolbox](http://dev.ti.com/tirex/explore/node?node=AJoMGA2ID9pCPWEKPi16wg__VLyFKFf__LATEST).
 
-### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer) mmWave Viewer.  
+### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer) mmWave Viewer
 
 ![mmWave - board](/screenshots/iwr6843isk_iwr6843isk-e-003-annotate.jpg)
 
@@ -35,7 +35,6 @@ http://www.ti.com/sensors/mmwave/overview.html
 - Next press the **NRST/SW2** 'reset' button on the MMWAVEICBOOST and the visualiser should show 'Hardware Connected' at the bottom of the screen.
 
 ![mmWave - Visualiser Serial](/screenshots/MMWAVE-visualiserconnected.png)
-
 
 - Click the 'LOAD CONFIG FROM PC AND START' and select the *high_accuracy_demo_68xx.cfg* as the configuration to load.
 
@@ -53,7 +52,7 @@ http://www.ti.com/sensors/mmwave/overview.html
 
 ![Terminal - mmWave](/screenshots/TERM-mmwave.png)
 
-### Step 4 - Connecting the LaunchPad and BoosterPack.  
+### Step 4 - Connecting the LaunchPad and BoosterPack
 
 The mmWave MMWAVEICBOOST has a BoosterPack connector which is compatible with the CC3235SF LaunchPad.  These boards can be connected together and the USB serial connection returned to the CC3235SF LaunchPad.
 
@@ -129,7 +128,6 @@ void MMWAVE_getJsonPayload(char *string, int len)
         ,payloadCount++
     );
 }    
-
 ```
 
 - All MMAVE code is enabled via build define *SENSORS_MMWAVE* which should be enabled.
