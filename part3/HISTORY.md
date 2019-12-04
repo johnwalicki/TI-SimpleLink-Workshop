@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [**Historical Charts**](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [**Historical Charts**](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # Node-RED Charts of Historical Sensor Data
@@ -44,5 +44,5 @@ The previous section stored the Device environment sensor data into a Cloudant D
 
 ***
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [**Historical Charts**](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [**Historical Charts**](HISTORY.md) - [Summary](SUMMARY.md)
 ***

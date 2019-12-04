@@ -48,7 +48,7 @@ In this workshop, you will learn how to:
 - Configure the mmWave sensor
 - Use [TI GUI Composer](http://dev.ti.com/gc) to view and configure the mmWave sensor data
 - Connect the mmWave sensor boosterpack to the Wi-Fi LaunchPad and compile an application on the LaunchPad to receive the mmWave data
-- Send mmWave Time of Flight (ToF) distance sensor data to Watson IoT
+- Send mmWave Range/distance sensor data to Watson IoT
 - Plot ToF distance sensor data
 - Create a Node-RED flow that uses the Cloudant node
 - Format a time series database record
@@ -132,13 +132,13 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 - Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part3/DASHBOARD.md)
 
-### Section 13 - mmWave BoosterPack - Time of Flight Sensor Data
+### Section 13 - mmWave BoosterPack - mmWave Range Sensor Data
 
 - Instructions : [Add the mmWave BoosterPack to your LaunchPad and compile a MCU binary](part3/MMWAVETOF.md)
 
-### Section 14 - Node-RED Dashboard - Plot ToF Distance Sensor Data
+### Section 14 - Node-RED Dashboard - Plot mmWave Range Sensor Data
 
-- Instructions : [Plot Time of Flight Sensor Data on a Node-RED Dashboard](TOFDASH.md)
+- Instructions : [Plot mmWave Range Sensor Data on a Node-RED Dashboard](part3/TOFDASH.md)
 
 ### Section 15 - Store Data in Cloud Storage for Historical Data Analytics
 

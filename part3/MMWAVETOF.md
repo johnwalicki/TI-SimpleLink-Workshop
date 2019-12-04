@@ -1,16 +1,16 @@
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [**Send mmWave ToF Data**](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [**Send mmWave ToF Data**](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # mmWave Sensors
 
 ## Lab Objectives
 
-In this lab you will attach the mmWave BoosterPack to your TI SimpleLink LaunchPad and learn about Time of Flight sensors. You will learn:
+In this lab you will attach the mmWave BoosterPack to your TI SimpleLink LaunchPad and learn about mmWave Range sensors. You will learn:
 
 - Add the mmWave BoosterPack to your TI SimpleLink LaunchPad
 - View and configure the mmWave sensor
-- Send Time of Flight distance sensor data to Watson IoT Platform
+- Send mmWave range sensor data to Watson IoT Platform
 
 ### Introduction
 
@@ -162,9 +162,9 @@ void MMWAVE_getJsonPayload(char *string, int len)
 
 ### Congratulations - The mmWave sensor is now sending status to the cloud!
 
-Continue to the next step - [Time of Flight Dashboard](TOFDASH.md)
+Continue to the next step - [mmWave Range Dashboard](TOFDASH.md)
 
 ***
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [**Send mmWave ToF Data**](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [**Send mmWave ToF Data**](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***

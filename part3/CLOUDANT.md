@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [**Store Data in Cloud Storage**](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [**Store Data in Cloud Storage**](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # Store mmWave Distance Data in Cloud Storage for Historical Data Analytics
@@ -53,5 +53,5 @@ In this Step you will use Node-RED to store IoT Sensor data from the TI SimpleLi
 
 ***
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [**Store Data in Cloud Storage**](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [**Store Data in Cloud Storage**](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
