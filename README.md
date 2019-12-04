@@ -43,13 +43,13 @@ In this workshop, you will learn how to:
 - Experiment with Chart types
 - Plot Real Time sensor data
 - Learn about the [TI IWR6843 mmWave sensor](http://www.ti.com/product/IWR6843)
-- Learn about the [TI ISK6843 standard antenna sensor module](http://www.ti.com/tool/MMWAVEICBOOST)
+- Learn about the [TI IWR6843ISK sensor module](http://www.ti.com/tool/IWR6843ISK)
 - Learn about the [TI mmWave sensor carrier boosterpack](http://www.ti.com/tool/MMWAVEICBOOST)
 - Configure the mmWave sensor
-- Use [TI GUI Composer](http://dev.ti.com/gc) to view and configure the mmWave sensor data
-- Connect the mmWave sensor boosterpack to the Wi-Fi LaunchPad and compile an application on the LaunchPad to receive the mmWave data
+- Use [TI GUI Composer](https://dev.ti.com/gallery/) to view and configure the mmWave sensor data
+- Connect the mmWave sensor boosterpack to the CC3235 Wi-Fi LaunchPad and compile an application to receive the mmWave Radar data
 - Send mmWave Range/distance sensor data to Watson IoT
-- Plot ToF distance sensor data
+- Plot ToF distance sensor data???
 - Create a Node-RED flow that uses the Cloudant node
 - Format a time series database record
 - View Cloudant databases
