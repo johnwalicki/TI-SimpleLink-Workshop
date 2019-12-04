@@ -6,7 +6,7 @@
 
 ## Lab Objectives
 
-In this lab you will attach the mmWave BoosterPack to your TI SimpleLink LaunchPad and learn about mmWave Range sensors. You will learn:
+In this lab you will attach the mmWave BoosterPack to your TI SimpleLink LaunchPad and a TI mmWave Radar sensor. You will learn:
 
 - Add the mmWave BoosterPack to your TI SimpleLink LaunchPad
 - View and configure the mmWave sensor
@@ -22,11 +22,11 @@ http://www.ti.com/sensors/mmwave/overview.html
 
 *This step has been prior to the lab session*.  For referece, instructions for this can be found in the [TI mmWave Toolbox](http://dev.ti.com/tirex/explore/node?node=AJoMGA2ID9pCPWEKPi16wg__VLyFKFf__LATEST).
 
-### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer) mmWave Viewer.  
+### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer based) mmWave Viewer.  
 
 ![mmWave - board](/screenshots/iwr6843isk_iwr6843isk-e-003-annotate.jpg)
 
-- Connect 5v power to the MMWAVEICBOOST board and USB to the XDS110 port.
+- Connect 5v power to the MMWAVEICBOOST board and USB to the XDS110 port as shown in the image. 
 - Open the visualiser using the pre-installed desktop shortcut.
 - The application needs to communicate with 2 Serial Ports on the IWR6843.  One is used for configuration/application control and the other is used for streaming radar data.  First configure the serial ports, by clicking on the 'Options'->'Serial Ports' menu and select the 2 XDS110 serial ports connected to the IWR6843.
 
@@ -49,13 +49,13 @@ http://www.ti.com/sensors/mmwave/overview.html
 
 - Close the High Accuracy Visualiser window and press the **SW1** button which will convert the output stream from binary to text which can easily be viewed and consumed by the CC3235SF MCU.
 
-- Open a serial port on the CFG port (921600,n,8,1) and you should see this line buffered status reported every second from the mmWave board.
+- Open a serial port in Teraterm (link on desktop) for the DATA port (921600,n,8,1) and you should see this line buffered status reported every second from the mmWave board. You will see the range reported to mm accuracy, as well as the on-chip temperature measurements for the 2 antenna chains that we are using. 
 
 ![Terminal - mmWave](/screenshots/TERM-mmwave.png)
 
 ### Step 4 - Connecting the LaunchPad and BoosterPack.  
 
-The mmWave MMWAVEICBOOST has a BoosterPack connector which is compatible with the CC3235SF LaunchPad.  These boards can be connected together and the USB serial connection returned to the CC3235SF LaunchPad.
+The mmWave MMWAVEICBOOST has a BoosterPack connector which is compatible with the CC3235SF LaunchPad.  These boards can be connected together and the serial connection (seen over USB) can be returned directly to the CC3235SF LaunchPad.
 
 ### Step 5 - Building the LaunchPad application
 
@@ -140,7 +140,7 @@ void MMWAVE_getJsonPayload(char *string, int len)
 
 ![CCS Project - Build Project](/screenshots/CCS-buildproject.png)
 
-- Once project is built, make sure the LaunchPad is connected via USB and click the 'Bug' icon to 'Launch'.  This will switch the CCS 'perspective' to debug view and load the program onto the target LaunchPad. 
+- Once project is built, make sure that the CC3235 LaunchPad is connected via USB and click the 'Bug' icon to 'Launch'.  This will switch the CCS 'perspective' to debug view and load the program onto the target LaunchPad. 
 
 ![CCS Project - Build Project](/screenshots/CCS-launchdebugger.png)
 
