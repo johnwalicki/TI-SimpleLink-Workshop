@@ -66,7 +66,9 @@ This tutorial can be completed using an IBM Cloud Lite account.
 
 ### Sections 1-4 - Installing tools, configuring the LaunchPad board
 
-In this workshop, the laptops provided have been pre-installed with the necessary software and software development kits.  This includes the following :-
+**NOTE :: In this workshop, the laptops provided have been pre-installed with the necessary software and software development kits.**
+
+This includes the following :-
 
 - [TI Code Composer Studio IDE](http://www.ti.com/design-resources/embedded-development/ccs-development-tools.html)
 - [TI Uniflash]()
