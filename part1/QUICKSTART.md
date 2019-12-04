@@ -13,7 +13,9 @@ Quickstart allows you to experiment without having to register.
 
 - Open Code Composer Studio using the default workspace and select the **watson_sensors_mmwave_CC3235SF_LAUNCHXL_tirtos_ccs** project.
 
-- First configure the build options for this project to enable the on-board temperature (TMP117) and accelerometer (BMA2X2) sensors.
+- First configure the build options for this project to enable the on-board temperature (TMP116/7) and accelerometer (BMA2X2) sensors.
+
+![CCS Project - Build Options](/screenshots/CCS-buildsettings.png)
 
 ![CCS Project - Select Sensors](/screenshots/CCS-sensorsbuildconfig.png)
 
