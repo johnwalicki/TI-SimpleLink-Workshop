@@ -1,6 +1,6 @@
 ***
 *Quick links :*
-[Home](/README.md) - [**Node-RED Charts**](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [**Node-RED Charts**](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # Node-RED Dashboard Charts - Plot Environmental Sensor Data
@@ -82,5 +82,5 @@ Often IoT devices and sensors are deployed so that alerts can be triggered when 
 
  ***
  *Quick links :*
- [Home](/README.md) - [**Node-RED Charts**](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [Time of Flight Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+ [Home](/README.md) - [**Node-RED Charts**](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [mmWave Range Dashboard](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
  ***

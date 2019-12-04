@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [**Time of Flight Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [**mmWave Range Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
 
 # Plot mmWave Distance on a Node-RED Dashboard
@@ -26,16 +26,16 @@ IoT sensors that can measure distance with good accuracy are useful in numerous 
 
 ### Step 2 - Graph mmWave IoT Sensor data using Node-RED
 
-- The mmWave Time of Flight flow displays the IoT Sensor Device data on a Node-RED Dashboard.  It uses the Node-RED Chart node to display a single bar representing the height.  The flow also implements a gauge. There is a nice node-red-contrib-ui-level widget that shows tick marks as both vertical and horizontal elements. Various mmWave sensor data is displayed as text values.
+- The mmWave Range flow displays the IoT Sensor Device data on a Node-RED Dashboard.  It uses the Node-RED Chart node to display a single bar representing the height.  The flow also implements a gauge. There is a nice node-red-contrib-ui-level widget that shows tick marks as both vertical and horizontal elements. Various mmWave sensor data is displayed as text values.
 
-![Node-RED mmWave ToF Flow](/screenshots/NRD-TI-mmWave-Dashboard-flow.png)
+![Node-RED mmWave Range Flow](/screenshots/NRD-TI-mmWave-Dashboard-flow.png)
 
-### Step 3 - Time of Flight Dashboard
+### Step 3 - mmWave Range Dashboard
 
-- Turn to the Node-RED Dashboard browser tab, click on the menu tab in the upper left corner, and select the mmWave ToF tab.
+- Turn to the Node-RED Dashboard browser tab, click on the menu tab in the upper left corner, and select the mmWave Range tab.
 - On the mmWave dashboard, you will see a bar chart, a Level and a Gauge.
 
-![Node-RED mmWave ToF Flow](/screenshots/NRD-TI-mmWave-Dashboard.png)
+![Node-RED mmWave Range Flow](/screenshots/NRD-TI-mmWave-Dashboard.png)
 
 
 ### Congratulations - The mmWave Dashboard is configured
@@ -43,5 +43,5 @@ Continue to the next step - [Store Distance Data](CLOUDANT.md)
 
 ***
 *Quick links :*
-[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave ToF Data](MMWAVETOF.md) - [**Time of Flight Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
+[Home](/README.md) - [Node-RED Charts](DASHBOARD.md) - [Send mmWave Range Data](MMWAVETOF.md) - [**mmWave Range Dashboard**](TOFDASH.md) - [Store Data in Cloud Storage](CLOUDANT.md) - [Historical Charts](HISTORY.md) - [Summary](SUMMARY.md)
 ***
