@@ -1,17 +1,17 @@
 [
     {
-        "id": "8e50368b.8ced88",
+        "id": "b3607eb2.e5b4f",
         "type": "tab",
         "label": "Historical Chart",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "d9560e3f.72ad9",
+        "id": "afe6cda4.28507",
         "type": "debug",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Line Chart data",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -22,11 +22,11 @@
         "wires": []
     },
     {
-        "id": "41672081.6b5928",
+        "id": "4cdf79a0.37525",
         "type": "ui_chart",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
-        "group": "51c21da0.0ff97c",
+        "group": "a867c687.734768",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -64,24 +64,70 @@
         ]
     },
     {
-        "id": "c834be14.5c01",
+        "id": "34196449.8e0ccc",
+        "type": "cloudant in",
+        "z": "b3607eb2.e5b4f",
+        "name": "",
+        "cloudant": "",
+        "database": "mmwave-london",
+        "service": "",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "6e9efd50.aac314",
+                "9af1e69d.7e59c8",
+                "22681441.43bdd4"
+            ]
+        ]
+    },
+    {
+        "id": "6e9efd50.aac314",
         "type": "debug",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Cloudant records",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
-        "x": 610,
+        "x": 590,
         "y": 260,
         "wires": []
     },
     {
-        "id": "8a99dcc3.5a4d78",
+        "id": "f7233e0f.f09d48",
+        "type": "ui_button",
+        "z": "b3607eb2.e5b4f",
+        "name": "",
+        "group": "cf6bae3a.87139",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load IoT Sensor Data",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "34196449.8e0ccc"
+            ]
+        ]
+    },
+    {
+        "id": "481d85ef.57d0fc",
         "type": "change",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Clear Chart",
         "rules": [
             {
@@ -101,28 +147,28 @@
         "y": 160,
         "wires": [
             [
-                "41672081.6b5928",
-                "6697dd31.9e01f4"
+                "4cdf79a0.37525",
+                "b52be5d9.9b1048"
             ]
         ]
     },
     {
-        "id": "aec6f9fc.99e2a8",
+        "id": "7f8ad63b.ccd7d",
         "type": "comment",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Select Date Range",
-        "info": "\n1572566401000\n     86400000\n1577750401000",
+        "info": "",
         "x": 270,
         "y": 340,
         "wires": []
     },
     {
-        "id": "5fa74308.070e34",
+        "id": "4f9fb666.ff13f8",
         "type": "ui_date_picker",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
         "label": "Start Date",
-        "group": "2fd459fb.e45ce6",
+        "group": "cf6bae3a.87139",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -132,17 +178,17 @@
         "y": 380,
         "wires": [
             [
-                "5dcc21d6.fcceb"
+                "4b19755d.8e331c"
             ]
         ]
     },
     {
-        "id": "aef2038e.ac5108",
+        "id": "f33c80c6.6ba13",
         "type": "ui_date_picker",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
         "label": "End Date",
-        "group": "2fd459fb.e45ce6",
+        "group": "cf6bae3a.87139",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -152,14 +198,14 @@
         "y": 420,
         "wires": [
             [
-                "cc39e98b.0eec98"
+                "42758ee9.031e7"
             ]
         ]
     },
     {
-        "id": "ca118dd5.37e1f8",
+        "id": "52de5c26.b60744",
         "type": "debug",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
         "active": true,
         "console": "false",
@@ -169,21 +215,21 @@
         "wires": []
     },
     {
-        "id": "f537367f.161148",
+        "id": "3ff87790.2ac1f8",
         "type": "debug",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
         "active": true,
         "console": "false",
         "complete": "false",
-        "x": 910,
+        "x": 830,
         "y": 420,
         "wires": []
     },
     {
-        "id": "16ced4de.989dd3",
+        "id": "dc1ee5a0.5f0fb",
         "type": "change",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Start Date",
         "rules": [
             {
@@ -203,14 +249,14 @@
         "y": 380,
         "wires": [
             [
-                "5fa74308.070e34"
+                "4f9fb666.ff13f8"
             ]
         ]
     },
     {
-        "id": "e202775c.7b083",
+        "id": "53664491.1c8fcc",
         "type": "change",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "End Date",
         "rules": [
             {
@@ -230,14 +276,14 @@
         "y": 420,
         "wires": [
             [
-                "aef2038e.ac5108"
+                "f33c80c6.6ba13"
             ]
         ]
     },
     {
-        "id": "5dcc21d6.fcceb",
+        "id": "4b19755d.8e331c",
         "type": "change",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Start Time Range",
         "rules": [
             {
@@ -257,22 +303,22 @@
         "y": 380,
         "wires": [
             [
-                "ca118dd5.37e1f8"
+                "52de5c26.b60744"
             ]
         ]
     },
     {
-        "id": "cc39e98b.0eec98",
+        "id": "42758ee9.031e7",
         "type": "change",
-        "z": "8e50368b.8ced88",
-        "name": "End Time Range Inclusive",
+        "z": "b3607eb2.e5b4f",
+        "name": "End Time Range",
         "rules": [
             {
                 "t": "set",
                 "p": "end-time",
                 "pt": "flow",
-                "to": "payload + 86400000",
-                "tot": "jsonata"
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -280,18 +326,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
+        "x": 630,
         "y": 420,
         "wires": [
             [
-                "f537367f.161148"
+                "3ff87790.2ac1f8"
             ]
         ]
     },
     {
-        "id": "58d6024b.2ea35c",
+        "id": "a972ea79.278e6",
         "type": "inject",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
         "topic": "",
         "payload": "true",
@@ -304,17 +350,17 @@
         "y": 400,
         "wires": [
             [
-                "e202775c.7b083",
-                "16ced4de.989dd3"
+                "53664491.1c8fcc",
+                "dc1ee5a0.5f0fb"
             ]
         ]
     },
     {
-        "id": "53a08342.79523c",
+        "id": "7f4da8bf.06d468",
         "type": "ui_button",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
-        "group": "2fd459fb.e45ce6",
+        "group": "cf6bae3a.87139",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -331,33 +377,33 @@
         "y": 160,
         "wires": [
             [
-                "8a99dcc3.5a4d78"
+                "481d85ef.57d0fc"
             ]
         ]
     },
     {
-        "id": "1d1c7550.3176b3",
+        "id": "9af1e69d.7e59c8",
         "type": "function",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Create a Bar Chart Array for Chart.js",
-        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\n//var starttime = flow.get(\"start-time\");\n//var endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// Now we need to sort on the time so that we give the Chart node an array in time order\n// Bar Charts don't have a time scale on the x axis so sort by time first.\nvar DistanceData = msg.payload ;\nDistanceData.sort(function sortNumber(a,b) { return a.time - b.time; });\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[DistanceData[0].distance],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; DistanceData.length; i++ ) {\n    //if( (DistanceData[i].time >= starttime) && (DistanceData[i].time <= endtime) ) {\n       ChartData[0].data.push( DistanceData[i].distance );\n    //}\n}\n\ndelete msg.cloudant ;\nmsg.payload = ChartData;\nreturn msg;",
+        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\nvar starttime = flow.get(\"start-time\");\nvar endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// Now we need to sort on the time so that we give the Chart node an array in time order\n// Bar Charts don't have a time scale on the x axis so sort by time first.\nvar DistanceData = msg.payload ;\nDistanceData.sort(function sortNumber(a,b) { return a.time - b.time; });\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[DistanceData[0].distance],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; i < DistanceData.length; i++ ) {\n    if( (DistanceData[i].time >= starttime) && (DistanceData[i].time <= endtime) ) {\n       ChartData[0].data.push( DistanceData[i].distance );\n    }\n}\n\nmsg.payload = ChartData;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 670,
         "y": 100,
         "wires": [
             [
-                "244094d5.0c2e14",
-                "6697dd31.9e01f4"
+                "a774879a.c0526",
+                "b52be5d9.9b1048"
             ]
         ]
     },
     {
-        "id": "6697dd31.9e01f4",
+        "id": "b52be5d9.9b1048",
         "type": "ui_chart",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "",
-        "group": "51c21da0.0ff97c",
+        "group": "a867c687.734768",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -374,7 +420,7 @@
         "removeOlderPoints": "5000",
         "removeOlderUnit": "60",
         "cutout": 0,
-        "useOneColor": true,
+        "useOneColor": false,
         "colors": [
             "#1f77b4",
             "#aec7e8",
@@ -395,26 +441,26 @@
         ]
     },
     {
-        "id": "f230a0a1.3e92e8",
+        "id": "22681441.43bdd4",
         "type": "function",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Create a Chart Array for Chart.js",
-        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js\n\n//var starttime = flow.get(\"start-time\");\n//var endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].time,\"y\":msg.payload[0].distance}]],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; i < msg.payload.length; i++ ) {\n    //if( (msg.payload[i].time >= starttime) && (msg.payload[i].time <= endtime) ) {\n        // This temperature reading is within the Date Range\n        ChartData[0].data[0].push( { \"x\":msg.payload[i].time,\"y\":msg.payload[i].distance } );\n    //}    \n}\n// Now we need to sort on the time so that we give the Chart node an array in time order\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;",
+        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js\n\nvar starttime = flow.get(\"start-time\");\nvar endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n    // The historical database does not contain values for this date range \n    // Reset the chart with a blank array\n    msg.payload = [] ;\n    return msg;\n}\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].time,\"y\":msg.payload[0].distance}]],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; i < msg.payload.length; i++ ) {\n    if( (msg.payload[i].time >= starttime) && (msg.payload[i].time <= endtime) ) {\n        // This temperature reading is within the Date Range\n        ChartData[0].data[0].push( { \"x\":msg.payload[i].time,\"y\":msg.payload[i].distance } );\n    }    \n}\n// Now we need to sort on the time so that we give the Chart node an array in time order\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 660,
         "y": 220,
         "wires": [
             [
-                "41672081.6b5928",
-                "d9560e3f.72ad9"
+                "4cdf79a0.37525",
+                "afe6cda4.28507"
             ]
         ]
     },
     {
-        "id": "244094d5.0c2e14",
+        "id": "a774879a.c0526",
         "type": "debug",
-        "z": "8e50368b.8ced88",
+        "z": "b3607eb2.e5b4f",
         "name": "Bar Chart data",
         "active": true,
         "tosidebar": true,
@@ -427,149 +473,32 @@
         "wires": []
     },
     {
-        "id": "1fe56bf7.0f7944",
-        "type": "cloudant in",
-        "z": "8e50368b.8ced88",
-        "name": "",
-        "cloudant": "",
-        "database": "mmwave-london",
-        "service": "TIsub1GHz-cloudantNoSQLDB",
-        "search": "_idx_",
-        "design": "byTime",
-        "index": "timeseries-index",
-        "x": 350,
-        "y": 160,
-        "wires": [
-            [
-                "1d1c7550.3176b3",
-                "f230a0a1.3e92e8",
-                "c834be14.5c01"
-            ]
-        ]
-    },
-    {
-        "id": "ae227c92.71d95",
-        "type": "change",
-        "z": "8e50368b.8ced88",
-        "name": "Date range",
-        "rules": [
-            {
-                "t": "set",
-                "p": "start-time",
-                "pt": "msg",
-                "to": "start-time",
-                "tot": "flow"
-            },
-            {
-                "t": "set",
-                "p": "end-time",
-                "pt": "msg",
-                "to": "end-time",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 150,
-        "y": 100,
-        "wires": [
-            [
-                "849f425b.d41b6"
-            ]
-        ]
-    },
-    {
-        "id": "849f425b.d41b6",
-        "type": "template",
-        "z": "8e50368b.8ced88",
-        "name": "Build Query",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "time:[{{start-time}} TO {{end-time}}]",
-        "output": "str",
-        "x": 330,
-        "y": 100,
-        "wires": [
-            [
-                "1fe56bf7.0f7944",
-                "c1b59679.1026"
-            ]
-        ]
-    },
-    {
-        "id": "927ef31f.d1cf88",
-        "type": "ui_button",
-        "z": "8e50368b.8ced88",
-        "name": "",
-        "group": "2fd459fb.e45ce6",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Load IoT Sensor Data",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 160,
-        "y": 40,
-        "wires": [
-            [
-                "ae227c92.71d95"
-            ]
-        ]
-    },
-    {
-        "id": "c1b59679.1026",
-        "type": "debug",
-        "z": "8e50368b.8ced88",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 530,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "51c21da0.0ff97c",
+        "id": "a867c687.734768",
         "type": "ui_group",
         "z": "",
         "name": "Historical Data",
-        "tab": "be65492a.3b8a6",
+        "tab": "6135a402.b2181c",
         "order": 1,
         "disp": true,
-        "width": "18",
-        "collapse": false
+        "width": "18"
     },
     {
-        "id": "2fd459fb.e45ce6",
+        "id": "cf6bae3a.87139",
         "type": "ui_group",
         "z": "",
         "name": "Chart Controls",
-        "tab": "be65492a.3b8a6",
+        "tab": "6135a402.b2181c",
         "order": 2,
         "disp": true,
-        "width": "6",
-        "collapse": false
+        "width": "6"
     },
     {
-        "id": "be65492a.3b8a6",
+        "id": "6135a402.b2181c",
         "type": "ui_tab",
         "z": "",
-        "name": "Historical Chart",
+        "name": "Original Historical Data",
         "icon": "fa-area-chart",
-        "order": 3,
+        "order": 4,
         "disabled": false,
         "hidden": false
     }
