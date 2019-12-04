@@ -47,9 +47,9 @@ http://www.ti.com/sensors/mmwave/overview.html
 
 - At this stage the mmWave sensor is configured and we now want to start sending data to the CC3235SF so that it can be sent to the cloud service.
 
-- Close the High Accuracy Visualiser window and press the **SW1** which will convert the output stream from binary to text which can easily be viewed and consumed by the CC3235SF MCU.
+- Close the High Accuracy Visualiser window and press the **SW1** button which will convert the output stream from binary to text which can easily be viewed and consumed by the CC3235SF MCU.
 
-- Open a serial port on the CFG port (115200,n,8,1) and you should see this line buffered status reported every second from the mmWave board.
+- Open a serial port on the CFG port (921600,n,8,1) and you should see this line buffered status reported every second from the mmWave board.
 
 ![Terminal - mmWave](/screenshots/TERM-mmwave.png)
 
@@ -59,7 +59,7 @@ The mmWave MMWAVEICBOOST has a BoosterPack connector which is compatible with th
 
 ### Step 5 - Building the LaunchPad application
 
-The code to handle the mmWave input stream is found in the *mmwave_uart.c* module.  This is a thread that reads line buffered data from the UART and then extracts data into variable before signalling to the send a message to the cloud.
+The code to handle the mmWave input stream is found in the *mmwave_uart.c* module.  This is a thread that reads line buffered data from the UART and then extracts data into variable before signalling to send a message to the cloud.
 
 ```c
 /*
@@ -132,7 +132,7 @@ void MMWAVE_getJsonPayload(char *string, int len)
 
 ```
 
-- All MMAVE code is enabled via build define 'SENSOR_MMWAVE' which should be enabled.
+- All MMAVE code is enabled via build define *SENSORS_MMWAVE* which should be enabled.
 
 ![CCS Project - Enable mmwave](/screenshots/CCS-enablemmwave.png)
 
@@ -160,7 +160,7 @@ void MMWAVE_getJsonPayload(char *string, int len)
 ![Terminal - Registered mmWave](/screenshots/TERM-registeredmmwave.png)
 
 
-### Congratulations - The mmWave sensor is now sending status to the cloud
+### Congratulations - The mmWave sensor is now sending status to the cloud!
 
 Continue to the next step - [Time of Flight Dashboard](TOFDASH.md)
 
