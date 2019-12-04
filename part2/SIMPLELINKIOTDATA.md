@@ -6,22 +6,22 @@
 
 ## Lab Objectives
 
-In this lab you will build a flow that receives Device environmental temperature and humidity sensor data.  You will learn:
+In this lab you will build a flow that receives Device environmental temperature and motion sensor data.  You will learn:
 
 - How to create a new Node-RED flow and configure MQTT Nodes
-- How to output the Device environmental temperature and humidity data.
+- How to output the Device environmental temperature and motion data.
 - How to work with JSON data and observe the sensor results in the Debug sidebar.
 
 ### Introduction
 
 In just a few nodes, Node-RED can receive the data that was transmitted from the device over MQTT to Watson IoT Platform.  This simple exercise will be the foundation for the next several sections that plot the data in a dashboard, trigger Real Time threshold alerts, store the data in Cloud Storage and allow for data analytics and anomaly detection.
 
-### Step 1 - Extract the Temperature from the JSON Object
+### Step 1 - Extract the Temperature and Accelerometer data from the JSON Object
 
 - Recall that the environmental sensor data was transmitted in a JSON object
 
  ```
- { "d": {"temp":X, "humidity":Y }}
+ { "d": {"temp":26.63,"accel_x":-27,"accel_y":136,"accel_z":4172}}
  ```
 
 - Node-RED passes data from node to node in a *msg.payload* JSON object.
