@@ -130,23 +130,23 @@ This section shows you how to send TI SimpleLink LaunchPad data to [Watson IoT Q
 
 ## Part 3
 
-### Section 12 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
+### Section 11 - Node-RED Dashboard Charts - Plot Environmental Sensor Data
 
 - Instructions : [Node-RED Dashboard Charts - Plot Environmental Sensor Data](part3/DASHBOARD.md)
 
-### Section 13 - mmWave BoosterPack - mmWave Range Sensor Data
+### Section 12 - mmWave BoosterPack - Time of Flight Sensor Data
 
 - Instructions : [Add the mmWave BoosterPack to your LaunchPad and compile a MCU binary](part3/MMWAVETOF.md)
 
-### Section 14 - Node-RED Dashboard - Plot mmWave Range Sensor Data
+### Section 13 - Node-RED Dashboard - Plot ToF Distance Sensor Data
 
-- Instructions : [Plot mmWave Range Sensor Data on a Node-RED Dashboard](part3/TOFDASH.md)
+- Instructions : [Plot Time of Flight Sensor Data on a Node-RED Dashboard](TOFDASH.md)
 
-### Section 15 - Store Data in Cloud Storage for Historical Data Analytics
+### Section 14 - Store Data in Cloud Storage for Historical Data Analytics
 
 - Instructions : [Store Data in Cloud Storage for Historical Data Analytics](part3/CLOUDANT.md)
 
-### Section 16 - Node-RED Charts of Historical Sensor Data
+### Section 15 - Node-RED Charts of Historical Sensor Data
 
 - Instructions : [Node-RED Charts of Historical Sensor Data](part3/HISTORY.md)
 
