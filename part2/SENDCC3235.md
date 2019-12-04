@@ -23,7 +23,7 @@ There are just a few steps to reconfigure the LaunchPad application from the Qui
 - Set the organisation *WATSON_IOT_ORGANISATION*
 ![CCS Project - Set Org](/screenshots/CCS-registeredorg.png)
 
-- Set the device type *WATSON_IOT_DEVICE_TYPE* and id *WATSON_IOT_DEVICE_ID*
+- Set the device type *WATSON_IOT_DEVICETYPE* and id *WATSON_IOT_DEVICEID*
 ![CCS Project - Set Type and Id](/screenshots/CCS-registeredtypedeviceid.png)
 
 - Next, set the authentication token *WATSON_IOT_TOKEN_PASSWORD*
