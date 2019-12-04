@@ -22,7 +22,7 @@ Summarize and link to these articles
 
 *This step has been prior to the lab session*.  For referece, instructions for this can be found in the [TI mmWave Toolbox](http://dev.ti.com/tirex/explore/node?node=AJoMGA2ID9pCPWEKPi16wg__VLyFKFf__LATEST).
 
-### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer) mmWave Viewer.
+### Step 2 - Running the 'High Accuracy Visualiser' (GUI-Composer based) mmWave Viewer.
 
 ![mmWave - board](/screenshots/iwr6843isk_iwr6843isk-e-003-annotate.jpg)
 
