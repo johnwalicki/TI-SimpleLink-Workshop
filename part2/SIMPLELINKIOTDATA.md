@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Send SimpleLink Data](SENDCC3235.md) - [**Sensor Data**](SIMPLELINKIOTDATA.md)
+[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [**Sensor Data**](SIMPLELINKIOTDATA.md)
 ***
 
 # Receive Device Environmental Sensor Data in Node-RED
@@ -55,5 +55,5 @@ In just a few nodes, Node-RED can receive the data that was transmitted from the
 Continue to the next section - [Node-RED Charts](/part3/DASHBOARD.md)
 ***
 *Quick links :*
-[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [Send SimpleLink Data](SENDCC3235.md) - [**Sensor Data**](SIMPLELINKIOTDATA.md)
+[Home](/README.md) - [IoT Platform Starter](CREATEIOTP.md) - [Device Types and Devices](SIMPLELINKDEVICE.md) - [Send SimpleLink Data](SENDCC3235.md) - [Node-RED Setup](NODERED.md) - [Node-RED MQTT](MQTTCONFIG.md) - [**Sensor Data**](SIMPLELINKIOTDATA.md)
 ***
