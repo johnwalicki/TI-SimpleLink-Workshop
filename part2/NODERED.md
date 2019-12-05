@@ -26,18 +26,7 @@ Recall that at the beginning of this section, you created a Node-RED Starter App
 
 A new browser tab will open to the Node-RED start page.  Node-RED is an open-source Node.js application that provides a visual programming editor that makes it easy to wire together flows.
 
-Several panels will help you set up Node-RED in your Watson IoT Starter application.
-
-- Welcome to Node-RED and IoT Platform. Click the **Next** button to proceed. Step 1 of 4
-<img src="/screenshots/IoTP-Starter-NodeREDSetup-Welcome.png" width="70%">
-
-- Secure your Node-RED editor by setting a username / password.  Remember your username / password. Click the **Next** button to proceed. Step 2 of 4
-<img src="/screenshots/IoTP-Starter-NodeREDSetup-Security.png" width="70%">
-
-- If you forget, you can reset the username / password in the Cloudant DB or by setting IBM Cloud environment variables.  Click the **Finish** button to proceed. Step 3 of 4
-<img src="/screenshots/IoTP-Starter-NodeREDSetup-EnvVars.png" width="70%">
-
-- Click the **Go to your Node-RED flow editor** button to launch the Node-RED flow editor. Step 4 of 4
+- Click the **Go to your Node-RED flow editor** button to launch the Node-RED flow editor.
 <img src="/screenshots/IoTP-Starter-NodeRED-Launch.png" width="70%">
 
 - **Sign in** with your new username and password credentials.
