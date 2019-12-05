@@ -72,7 +72,7 @@ In just a few nodes, Node-RED can send the TI SimpleLink LaunchPad environmental
 
 **Congratulations** - Your TI SimpleLink MCU is sending sensor data to Watson IoT Platform.
 
-Continue to the next step - [Receive SimpleLink Data](SIMPLELINKIOTDATA.md)
+Continue to the next step - [Node-RED Setup](NODERED.md)
 
 ***
 *Quick links :*
